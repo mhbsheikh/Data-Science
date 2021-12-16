@@ -1,3 +1,5 @@
+# keywords order
+# SELECT -> FROM -> WHERE -> GROUP BY -> HAVING -> ORDER BY -> LIMIT
 
 ########################################################################
 -- create a database
