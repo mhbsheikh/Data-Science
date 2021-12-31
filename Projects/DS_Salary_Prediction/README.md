@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center">An API for Data Science Salary Prediction</h1>
+  <h1 align="center">Data Science Salary Prediction</h1>
 
 <!--   <h4 align="center">
     A machine learning approach to estimate the data science salary.
