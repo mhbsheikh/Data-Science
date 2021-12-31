@@ -24,7 +24,6 @@
     <li><a href="#feature_engineering">Feature Engineering</a></li>
     <li><a href="#eda">Exploratory Data Analysis</a></li>
     <li><a href="#ml">Machine Learning</a></li>
-    <li><a href="#api">Production: API</a></li>
     <li><a href="#refs">References</a></li>
   </ol>
 </details>
@@ -57,12 +56,6 @@ details....
 
 <!-- ############################################################## -->
 <h2 id='ml'> Machine Learning </h2>
-details....
-
-
-
-<!-- ############################################################## -->
-<h2 id='api'> Production: API </h2>
 details....
 
 
