@@ -111,14 +111,46 @@ select * from employees;
 #################################################
 # self join
 #################################################
+-- emp and manager
+select 
+	a.emp_id, a.first_name as employee, a.reports_to, b.first_name as manager
+from employees a, employees b
+where a.reports_to = b.emp_id;
+
+-- emp and manager
 select 
 	e.emp_id,
-    e.first_name,
-    s.reports_to,
-    concat(s.first_name, ' reports to ', e.first_name) as manager
+    	e.first_name,
+    	s.reports_to,
+    	concat(s.first_name, ' reports to ', e.first_name) as manager
 from employees e
 inner join employees s
 on e.emp_id = s.reports_to;
+
+
+-- create a new table
+create table if not exists students(
+	student_id int,
+	course_id int,
+    course_name varchar(10)
+);
+
+alter table students modify student_id varchar(10);
+alter table students modify course_id varchar(10);
+
+insert into students (student_id, course_id, course_name) values
+('student1', 'course1', 'cse115'),
+('student1', 'course2', 'mat116'),
+('student2', 'course3', 'cse498R'),
+('student3', 'course4', 'bus498R');
+
+
+-- students who are enrolled in more than one course
+select 
+	-- *,
+    a.student_id, a.course_id
+from students a, students b
+where a.student_id = b.student_id and a.course_id <> b.course_id;
 
 
 
